@@ -241,8 +241,8 @@ export default function Quality() {
         >
           <h3 className="text-3xl font-bold mb-4">我们的品质承诺</h3>
           <p className="text-blue-100 mb-8 max-w-3xl mx-auto text-lg leading-relaxed">
-            "我们承诺提供的每一份海鲜都经过严格的品质检验，如果您对我们的产品不满意，
-            我们将无条件退换货并承担所有相关费用。您的满意是我们最大的追求。"
+            我们承诺提供的每一份海鲜都经过严格的品质检验，如果您对我们的产品不满意，
+            我们将无条件退换货并承担所有相关费用。您的满意是我们最大的追求。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
