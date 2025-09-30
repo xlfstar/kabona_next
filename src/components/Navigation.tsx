@@ -10,12 +10,14 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const [showLanguageMenu, setShowLanguageMenu] = useState(false)
+  const [mounted, setMounted] = useState(false)
   const t = useTranslations()
   const locale = useLocale()
   const router = useRouter()
   const pathname = usePathname()
 
   useEffect(() => {
+    setMounted(true)
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10)
     }
@@ -44,18 +46,20 @@ export default function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full ${
+        mounted && isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="flex items-center justify-between h-16 w-full min-w-0">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="flex items-center justify-center w-10 h-10 bg-blue-600 rounded-lg">
-              <Fish className="w-6 h-6 text-white" />
+          <div className="flex items-center space-x-2 flex-shrink-0">
+            <div className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 bg-blue-600 rounded-lg">
+              <Fish className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
             </div>
-            <div className="text-xl font-bold text-blue-600">Kabona</div>
+            <div className="text-lg sm:text-xl font-bold text-blue-600 truncate">
+              Kabona
+            </div>
           </div>
 
           {/* Desktop Navigation */}
@@ -66,7 +70,7 @@ export default function Navigation() {
                   key={item.name}
                   href={item.href}
                   className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
-                    isScrolled
+                    mounted && isScrolled
                       ? 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
                       : 'text-white hover:text-blue-200 hover:bg-white/10'
                   }`}
@@ -82,7 +86,7 @@ export default function Navigation() {
             <button
               onClick={() => setShowLanguageMenu(!showLanguageMenu)}
               className={`flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
-                isScrolled
+                mounted && isScrolled
                   ? 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
                   : 'text-white hover:text-blue-200 hover:bg-white/10'
               }`}
@@ -120,19 +124,51 @@ export default function Navigation() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-2">
+            {/* Mobile Language Switcher */}
+            <div className="relative">
+              <button
+                onClick={() => setShowLanguageMenu(!showLanguageMenu)}
+                className={`flex items-center justify-center p-2 rounded-md transition-colors duration-200 ${
+                  mounted && isScrolled
+                    ? 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+                    : 'text-white hover:text-blue-200 hover:bg-white/10'
+                }`}
+              >
+                <span className="text-lg">
+                  {languages.find((lang) => lang.code === locale)?.flag}
+                </span>
+              </button>
+
+              {showLanguageMenu && (
+                <div className="absolute right-0 mt-2 w-40 bg-white rounded-md shadow-lg py-1 z-50">
+                  {languages.map((language) => (
+                    <button
+                      key={language.code}
+                      onClick={() => handleLanguageChange(language.code)}
+                      className="flex items-center space-x-2 w-full px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
+                    >
+                      <span>{language.flag}</span>
+                      <span>{language.name}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Menu Toggle Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
               className={`inline-flex items-center justify-center p-2 rounded-md transition-colors duration-200 ${
-                isScrolled
+                mounted && isScrolled
                   ? 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
                   : 'text-white hover:text-blue-200 hover:bg-white/10'
               }`}
             >
               {isOpen ? (
-                <X className="w-6 h-6" />
+                <X className="w-5 h-5" />
               ) : (
-                <Menu className="w-6 h-6" />
+                <Menu className="w-5 h-5" />
               )}
             </button>
           </div>
@@ -141,25 +177,26 @@ export default function Navigation() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
+        <div className="md:hidden w-full overflow-hidden">
+          <div className="px-4 pt-2 pb-3 space-y-1 bg-white shadow-lg w-full">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-blue-600 hover:bg-blue-50 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+                className="text-gray-700 hover:text-blue-600 hover:bg-blue-50 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 w-full"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
               </a>
             ))}
-            <a
+
+            {/* <a
               href="#contact"
-              className="bg-blue-600 text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700 transition-colors duration-200 mt-4"
+              className="bg-blue-600 text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700 transition-colors duration-200 mt-4 w-full text-center"
               onClick={() => setIsOpen(false)}
             >
               {t('navigation.contact')}
-            </a>
+            </a> */}
           </div>
         </div>
       )}

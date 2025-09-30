@@ -4,7 +4,15 @@ import { NextIntlClientProvider } from 'next-intl' // 用于在Server Component�
 import { notFound } from 'next/navigation'
 import { getMessages } from 'next-intl/server'
 import { routing } from '@/i18n/routing'
+// import { GeistSans } from 'geist/font/sans'
+import { Geist, Inter } from 'next/font/google'
+const geist = Geist({
+  subsets: ['latin'],
+})
 
+const inter = Inter({
+  subsets: ['latin'],
+})
 interface RootLayoutProps {
   children: React.ReactNode
   params: Promise<{ locale: string }>
@@ -27,7 +35,10 @@ export default async function RootLayout({
   const messages = await getMessages()
 
   return (
-    <html lang={locale}>
+    <html
+      lang={locale}
+      className={geist.className}
+    >
       <body>
         <NextIntlClientProvider messages={messages}>
           {children}

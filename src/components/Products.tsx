@@ -119,9 +119,9 @@ export default function Products() {
   return (
     <section
       id="products"
-      className="py-20 bg-gray-50"
+      className="py-20 bg-gray-50 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
         {/* Section Header */}
         <div className="text-center mb-16">
           <motion.h2
@@ -145,7 +145,7 @@ export default function Products() {
         </div>
 
         {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-4 mb-12 overflow-hidden">
           {categories.map((category) => {
             const Icon = category.icon
             return (
@@ -157,8 +157,8 @@ export default function Products() {
                     ? 'bg-blue-600 text-white shadow-lg'
                     : 'bg-white text-gray-600 hover:bg-blue-50 hover:text-blue-600'
                 }`}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
               >
                 <Icon className="w-4 h-4 mr-2" />
                 {category.name}
@@ -168,10 +168,7 @@ export default function Products() {
         </div>
 
         {/* Products Grid */}
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-          layout
-        >
+        <motion.div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-hidden pb-12">
           {filteredProducts.map((product, index) => (
             <motion.div
               key={product.id}
@@ -180,8 +177,7 @@ export default function Products() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              layout
-              whileHover={{ y: -5 }}
+              whileHover={{ y: -3, transition: { duration: 0.2 } }}
             >
               {/* Product Image */}
               <div className="relative h-48 bg-gradient-to-br from-blue-100 to-blue-200">
@@ -240,7 +236,7 @@ export default function Products() {
 
         {/* CTA Section */}
         <motion.div
-          className="text-center mt-16"
+          className="text-center mt-4"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

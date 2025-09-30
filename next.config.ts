@@ -5,6 +5,8 @@ const withNextIntl = createNextIntlPlugin()
 
 const nextConfig: NextConfig = {
   /* config options here */
+  // 配置允许的开发环境跨域来源
+  allowedDevOrigins: ['192.168.31.104'],
   // 确保静态文件可以被正确访问
   // trailingSlash: false,
   // // 修复 Watchpack 错误

@@ -59,9 +59,9 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-20 bg-white"
+      className="py-20 bg-white overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
         {/* Section Header */}
         <div className="text-center mb-16">
           <motion.h2
@@ -183,7 +183,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                whileHover={{ y: -5 }}
+                whileHover={{ y: -3, transition: { duration: 0.2 } }}
               >
                 <div className="text-4xl mb-4">{value.icon}</div>
                 <h4 className="text-xl font-bold text-gray-900 mb-3">

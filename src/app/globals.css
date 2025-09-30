@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-sans: "Geist",Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  --font-fallback-sans: Arial, Helvetica, sans-serif;
 }
 
 @theme inline {
@@ -20,7 +22,14 @@
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  /* font-family: Arial, Helvetica, sans-serif; */
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+html {
+  overflow-x: hidden;
+  max-width: 100vw;
 }
