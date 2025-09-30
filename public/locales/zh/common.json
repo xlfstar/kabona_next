@@ -1,0 +1,389 @@
+{
+  "welcome": "欢迎",
+  "home": "首页",
+  "about": "关于我们",
+  "products": "探索产品",
+  "quality": "品质保证",
+  "getQuote": "获取报价",
+  "navigation": {
+    "home": "首页",
+    "about": "关于我们",
+    "products": "产品",
+    "quality": "品质保证",
+    "contact": "联系我们"
+  },
+  "hero": {
+    "title": "全球优质海鲜",
+    "subtitle": "直达您的餐桌",
+    "description": "Kabona致力于以最低成本提供来自全球各地最高品质海鲜，以最高标准加工和管理产品，确保新鲜度"
+  },
+  "features": {
+    "quality": {
+      "title": "最高品质",
+      "description": "严格的质量控制，确保每一份海鲜都符合最高标准"
+    },
+    "safety": {
+      "title": "安全保障",
+      "description": "先进的保鲜技术，全程冷链运输，保证食品安全"
+    },
+    "delivery": {
+      "title": "快速配送",
+      "description": "全球供应链网络，确保新鲜海鲜快速到达"
+    }
+  },
+  "productsPage": {
+    "title": "精选海鲜产品",
+    "description": "来自全球优质海域的新鲜海鲜，严格品控，确保每一份都是最佳品质",
+    "categories": {
+      "all": "全部产品",
+      "fish": "深海鱼类",
+      "shellfish": "贝类海鲜",
+      "crustaceans": "甲壳类",
+      "specialty": "特色海鲜"
+    },
+    "items": {
+      "salmon": {
+        "name": "挪威三文鱼",
+        "origin": "挪威",
+        "description": "来自挪威纯净海域的优质三文鱼，肉质鲜美，富含Omega-3脂肪酸",
+        "features": [
+          "野生捕捞",
+          "超低温保鲜",
+          "当日配送",
+          "营养丰富"
+        ]
+      },
+      "tuna": {
+        "name": "蓝鳍金枪鱼",
+        "origin": "地中海",
+        "description": "地中海深海蓝鳍金枪鱼，肉质紧实，是制作刺身的上等食材",
+        "features": [
+          "深海捕捞",
+          "急速冷冻",
+          "刺身级别",
+          "口感极佳"
+        ]
+      },
+      "lobster": {
+        "name": "澳洲龙虾",
+        "origin": "澳大利亚",
+        "description": "澳洲海域的新鲜龙虾，肉质Q弹，味道鲜甜",
+        "features": [
+          "活体运输",
+          "肉质饱满",
+          "味道鲜甜",
+          "营养价值高"
+        ]
+      },
+      "crab": {
+        "name": "阿拉斯加帝王蟹",
+        "origin": "阿拉斯加",
+        "description": "阿拉斯加寒冷海域的帝王蟹，蟹肉丰满，口感鲜美",
+        "features": [
+          "寒海捕捞",
+          "蟹肉丰满",
+          "口感鲜美",
+          "高蛋白质"
+        ]
+      },
+      "scallop": {
+        "name": "北海道扇贝",
+        "origin": "日本",
+        "description": "北海道纯净海域的新鲜扇贝，肉质鲜嫩，甜味十足",
+        "features": [
+          "纯净海域",
+          "肉质鲜嫩",
+          "甜味十足",
+          "低脂肪"
+        ]
+      },
+      "shrimp": {
+        "name": "厄瓜多尔白虾",
+        "origin": "厄瓜多尔",
+        "description": "厄瓜多尔优质白虾，肉质紧实，口感爽脆",
+        "features": [
+          "生态养殖",
+          "肉质紧实",
+          "口感爽脆",
+          "无添加剂"
+        ]
+      },
+      "oyster": {
+        "name": "法国生蚝",
+        "origin": "法国",
+        "description": "法国布列塔尼海域的新鲜生蚝，口感鲜美，海洋味浓郁",
+        "features": [
+          "海洋味浓郁",
+          "口感鲜美",
+          "营养丰富",
+          "天然养殖"
+        ]
+      },
+      "kingCrab": {
+        "name": "阿拉斯加帝王蟹",
+        "origin": "阿拉斯加",
+        "description": "阿拉斯加寒冷海域的帝王蟹，蟹肉丰满，口感鲜美",
+        "features": [
+          "寒海捕捞",
+          "蟹肉丰满",
+          "口感鲜美",
+          "高蛋白质"
+        ]
+      },
+      "seaBass": {
+        "name": "地中海鲈鱼",
+        "origin": "地中海",
+        "description": "地中海优质鲈鱼，肉质细嫩，味道清香",
+        "features": [
+          "肉质细嫩",
+          "味道清香",
+          "低脂肪",
+          "易消化"
+        ]
+      },
+      "greenMussels": {
+        "name": "新西兰青口贝",
+        "origin": "新西兰",
+        "description": "新西兰纯净海域的青口贝，肉质饱满，味道鲜甜",
+        "features": [
+          "纯净海域",
+          "肉质饱满",
+          "味道鲜甜",
+          "富含矿物质"
+        ]
+      }
+    },
+    "orderNow": "立即订购",
+    "details": "详情",
+    "hotSale": "热销",
+    "cta": {
+      "description": "想了解更多产品信息？",
+      "button": "联系我们获取完整产品目录"
+    }
+  },
+  "qualityPage": {
+    "title": "品质保证",
+    "description": "我们在整个供应链中实施严格的质量控制措施，确保每一份海鲜都符合最高标准",
+    "processTitle": "质量控制流程",
+    "steps": {
+      "selection": {
+        "title": "精心挑选",
+        "description": "专业团队从全球优质水域精选最优质的海鲜"
+      },
+      "temperature": {
+        "title": "温度控制",
+        "description": "在加工和储存过程中保持最佳温度"
+      },
+      "coldChain": {
+        "title": "冷链运输",
+        "description": "完整的冷链物流确保从海洋到餐桌的新鲜度"
+      },
+      "delivery": {
+        "title": "及时配送",
+        "description": "快速可靠的配送服务确保最佳新鲜度"
+      }
+    },
+    "certifications": {
+      "haccp": {
+        "name": "HACCP认证",
+        "description": "危害分析与关键控制点系统确保食品安全"
+      },
+      "iso9001": {
+        "name": "ISO 9001质量管理",
+        "description": "国际质量管理体系标准"
+      },
+      "msc": {
+        "name": "MSC可持续渔业",
+        "description": "海洋管理委员会可持续捕捞认证"
+      },
+      "brc": {
+        "name": "BRC全球标准",
+        "description": "英国零售商协会食品安全标准"
+      },
+      "fda": {
+        "name": "FDA认证",
+        "description": "美国食品药品监督管理局食品安全认证"
+      },
+      "eu": {
+        "name": "欧盟标准合规",
+        "description": "欧盟食品安全和质量标准"
+      }
+    },
+    "features": {
+      "traceability": {
+        "title": "全程可追溯",
+        "description": "从源头到终端的完整追踪，确保透明度和安全性"
+      },
+      "assurance": {
+        "title": "质量保证",
+        "description": "多层次质量检查确保持续的高标准"
+      },
+      "monitoring": {
+        "title": "实时监控",
+        "description": "运输过程中持续的温度和质量监控"
+      }
+    },
+    "certificationsTitle": "权威认证",
+    "promise": {
+      "title": "品质承诺",
+      "description": "我们承诺为您提供最高品质的海鲜产品，每一份都经过严格的质量检测和认证。从源头到餐桌，我们确保整个供应链的透明度和可追溯性。",
+      "learnMore": "了解更多详情",
+      "viewProducts": "查看认证产品"
+    }
+  },
+  "aboutPage": {
+    "title": "关于 Kabona",
+    "description": "专业的全球海鲜供应商，致力于为客户提供最优质的海鲜产品和服务",
+    "stats": {
+      "countries": "服务国家",
+      "customers": "满意客户",
+      "products": "产品种类",
+      "experience": "行业经验",
+      "certifications":"品质认证",
+      "growth":"年增长率"
+    },
+    "mission": {
+      "title": "我们的使命",
+      "paragraph1": "Kabona成立于2010年，是一家专业的全球海鲜供应商。我们致力于连接世界各地的优质海鲜资源与消费者，为客户提供最新鲜、最优质的海鲜产品。",
+      "highlight": "我们的目标是成为全球最值得信赖的海鲜供应商",
+      "paragraph2": "通过建立完善的全球供应链网络，我们能够确保从捕捞到餐桌的每一个环节都符合最高的质量标准。我们与世界各地的渔民、加工厂和物流公司建立了长期稳定的合作关系。",
+      "paragraph3": "无论您是高端餐厅、连锁超市还是个人消费者，我们都能为您提供定制化的海鲜供应解决方案，确保您获得最优质的产品和服务。"
+    },
+    "networkTitle": "全球海鲜供应网络",
+    "values": {
+      "quality": {
+        "title": "品质至上",
+        "description": "严格的质量控制体系，确保每一份海鲜都符合最高标准"
+      },
+      "sustainability": {
+        "title": "可持续发展",
+        "description": "支持可持续渔业，保护海洋生态环境"
+      },
+      "innovation": {
+        "title": "技术创新",
+        "description": "采用最先进的保鲜和物流技术，确保产品新鲜度"
+      },
+      "service": {
+        "title": "优质服务",
+        "description": "专业的客户服务团队，为您提供全方位的支持"
+      }
+    },
+    "valuesTitle": "我们的核心价值",
+    "cta": {
+      "title": "加入我们的合作伙伴网络",
+      "description": "无论您是餐厅、批发商还是零售商，我们都有适合您的海鲜供应解决方案",
+      "button": "开始合作"
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "description": "随时为您提供专业的海鲜供应咨询和定制化解决方案",
+    "form": {
+      "title": "在线咨询",
+      "name": "姓名",
+      "namePlaceholder": "请输入您的姓名",
+      "email": "邮箱",
+      "emailPlaceholder": "请输入您的邮箱地址",
+      "company": "公司名称",
+      "companyPlaceholder": "请输入您的公司名称",
+      "phone": "联系电话",
+      "phonePlaceholder": "请输入您的联系电话",
+      "productType": "产品类型",
+      "productTypePlaceholder": "请选择您感兴趣的产品类型",
+      "selectProductType": "请选择产品类型",
+      "productTypes": {
+        "fish": "深海鱼类",
+        "shellfish": "贝类海鲜",
+        "crustacean": "甲壳类",
+        "other": "其他产品",
+        "bulk": "批量采购",
+        "custom": "定制需求"
+      },
+      "message": "详细需求",
+      "messagePlaceholder": "请详细描述您的需求，包括数量、规格、交付时间等",
+      "sending": "发送中...",
+      "submit": "发送咨询",
+      "successMessage": "感谢您的咨询！我们将在24小时内与您联系。"
+    },
+    "info": {
+      "title": "联系方式",
+      "email": {
+        "title": "邮箱地址",
+        "content": "info@kabonaus.com",
+        "description": "我们会在24小时内回复您的邮件"
+      },
+      "phone": {
+        "title": "联系电话",
+        "content": "+86 400-123-4567",
+        "description": "工作时间：周一至周五 9:00-18:00"
+      },
+      "address": {
+        "title": "公司地址",
+        "content": "上海市浦东新区海鲜大道123号",
+        "description": "欢迎预约参观我们的展示中心"
+      },
+      "hours": {
+        "title": "营业时间",
+        "content": "周一至周五 9:00-18:00",
+        "description": "节假日请提前预约"
+      }
+    },
+    "map": {
+      "title": "地图位置"
+    },
+    "quickContact": {
+      "title": "快速联系",
+      "description": "紧急采购需求？我们的销售团队随时为您服务",
+      "call": "立即致电",
+      "email": "发送邮件"
+    }
+  },
+  "footer": {
+    "company": {
+      "description": "致力于以最低成本提供来自全球各地最高品质海鲜，以最高标准加工和管理产品，确保新鲜度。",
+      "address": "上海市浦东新区海鲜大道123号"
+    },
+    "sections": {
+      "products": "产品分类",
+      "company": "公司信息",
+      "services": "服务项目",
+      "support": "客户支持"
+    },
+    "links": {
+      "product": {
+        "fish": "深海鱼类",
+        "shellfish": "贝类海鲜",
+        "crustaceans": "甲壳类",
+        "specialty": "特色海鲜"
+      },
+      "company": {
+        "about": "关于我们",
+        "quality": "品质保证",
+        "news": "新闻资讯",
+        "careers": "招聘信息"
+      },
+      "service": {
+        "wholesale": "批发服务",
+        "retail": "零售服务",
+        "custom": "定制服务",
+        "support": "售后支持"
+      },
+      "support": {
+        "contact": "联系我们",
+        "chat": "在线客服",
+        "faq": "常见问题",
+        "shipping": "配送政策"
+      }
+    },
+    "newsletter": {
+      "title": "订阅我们的新闻通讯",
+      "description": "获取最新的产品信息和行业动态",
+      "placeholder": "请输入您的邮箱地址",
+      "subscribe": "立即订阅"
+    },
+    "copyright": "保留所有权利",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "website": "官网"
+  }
+}

@@ -2,78 +2,112 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 import { Fish, Waves, Star, MapPin } from 'lucide-react'
 
 export default function Products() {
+  const t = useTranslations()
   const [activeCategory, setActiveCategory] = useState('all')
 
   const categories = [
-    { id: 'all', name: '全部产品', icon: Fish },
-    { id: 'fish', name: '深海鱼类', icon: Fish },
-    { id: 'shellfish', name: '贝类海鲜', icon: Waves },
-    { id: 'crustacean', name: '甲壳类', icon: Fish },
+    { id: 'all', name: t('productsPage.categories.all'), icon: Fish },
+    { id: 'fish', name: t('productsPage.categories.fish'), icon: Fish },
+    {
+      id: 'shellfish',
+      name: t('productsPage.categories.shellfish'),
+      icon: Waves,
+    },
+    {
+      id: 'crustacean',
+      name: t('productsPage.categories.crustaceans'),
+      icon: Fish,
+    },
   ]
 
   const products = [
     {
       id: 1,
-      name: '挪威三文鱼',
+      name: t('productsPage.items.salmon.name'),
       category: 'fish',
       image: '/api/placeholder/400/300',
-      origin: '挪威',
+      origin: t('productsPage.items.salmon.origin'),
       rating: 4.9,
-      description: '来自挪威冰冷海域的优质三文鱼，肉质鲜美，富含Omega-3',
-      features: ['野生捕捞', '冰鲜保存', '当日配送'],
+      description: t('productsPage.items.salmon.description'),
+      features: [
+        t('productsPage.items.salmon.features.0'),
+        t('productsPage.items.salmon.features.1'),
+        t('productsPage.items.salmon.features.2'),
+      ],
     },
     {
       id: 2,
-      name: '澳洲龙虾',
+      name: t('productsPage.items.lobster.name'),
       category: 'crustacean',
       image: '/api/placeholder/400/300',
-      origin: '澳大利亚',
+      origin: t('productsPage.items.lobster.origin'),
       rating: 4.8,
-      description: '澳洲深海龙虾，肉质紧实甘甜，是高端餐厅的首选',
-      features: ['活体运输', '当季新鲜', '规格多样'],
+      description: t('productsPage.items.lobster.description'),
+      features: [
+        t('productsPage.items.lobster.features.0'),
+        t('productsPage.items.lobster.features.1'),
+        t('productsPage.items.lobster.features.2'),
+      ],
     },
     {
       id: 3,
-      name: '法国生蚝',
+      name: t('productsPage.items.oyster.name'),
       category: 'shellfish',
       image: '/api/placeholder/400/300',
-      origin: '法国',
+      origin: t('productsPage.items.oyster.origin'),
       rating: 4.7,
-      description: '法国布列塔尼海域的精品生蚝，口感鲜甜，层次丰富',
-      features: ['人工养殖', '净化处理', '开壳即食'],
+      description: t('productsPage.items.oyster.description'),
+      features: [
+        t('productsPage.items.oyster.features.0'),
+        t('productsPage.items.oyster.features.1'),
+        t('productsPage.items.oyster.features.2'),
+      ],
     },
     {
       id: 4,
-      name: '阿拉斯加帝王蟹',
+      name: t('productsPage.items.kingCrab.name'),
       category: 'crustacean',
       image: '/api/placeholder/400/300',
-      origin: '阿拉斯加',
+      origin: t('productsPage.items.kingCrab.origin'),
       rating: 5.0,
-      description: '阿拉斯加深海帝王蟹，蟹肉饱满，味道鲜美',
-      features: ['深海捕捞', '急冻保鲜', '蟹肉饱满'],
+      description: t('productsPage.items.kingCrab.description'),
+      features: [
+        t('productsPage.items.kingCrab.features.0'),
+        t('productsPage.items.kingCrab.features.1'),
+        t('productsPage.items.kingCrab.features.2'),
+      ],
     },
     {
       id: 5,
-      name: '地中海鲈鱼',
+      name: t('productsPage.items.seaBass.name'),
       category: 'fish',
       image: '/api/placeholder/400/300',
-      origin: '地中海',
+      origin: t('productsPage.items.seaBass.origin'),
       rating: 4.6,
-      description: '地中海养殖鲈鱼，肉质细嫩，适合多种烹饪方式',
-      features: ['海水养殖', '无抗生素', '环保包装'],
+      description: t('productsPage.items.seaBass.description'),
+      features: [
+        t('productsPage.items.seaBass.features.0'),
+        t('productsPage.items.seaBass.features.1'),
+        t('productsPage.items.seaBass.features.2'),
+      ],
     },
     {
       id: 6,
-      name: '新西兰青贝',
+      name: t('productsPage.items.greenMussels.name'),
       category: 'shellfish',
       image: '/api/placeholder/400/300',
-      origin: '新西兰',
+      origin: t('productsPage.items.greenMussels.origin'),
       rating: 4.8,
-      description: '新西兰清澈海域的青贝，肉质鲜甜，营养丰富',
-      features: ['纯净海域', '自然生长', '营养丰富'],
+      description: t('productsPage.items.greenMussels.description'),
+      features: [
+        t('productsPage.items.greenMussels.features.0'),
+        t('productsPage.items.greenMussels.features.1'),
+        t('productsPage.items.greenMussels.features.2'),
+      ],
     },
   ]
 
@@ -97,7 +131,7 @@ export default function Products() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            优质海鲜产品
+            {t('productsPage.title')}
           </motion.h2>
           <motion.p
             className="text-xl text-gray-600 max-w-3xl mx-auto"
@@ -106,7 +140,7 @@ export default function Products() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            精选来自全球各大海域的优质海鲜，严格品控，新鲜直达
+            {t('productsPage.description')}
           </motion.p>
         </div>
 
@@ -141,7 +175,7 @@ export default function Products() {
           {filteredProducts.map((product, index) => (
             <motion.div
               key={product.id}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              className="flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -156,7 +190,7 @@ export default function Products() {
                 </div>
                 <div className="absolute top-4 left-4">
                   <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-medium">
-                    热销
+                    {t('productsPage.hotSale')}
                   </span>
                 </div>
                 <div className="absolute top-4 right-4 flex items-center bg-white/90 px-2 py-1 rounded-full">
@@ -168,7 +202,7 @@ export default function Products() {
               </div>
 
               {/* Product Info */}
-              <div className="p-6">
+              <div className="p-6 flex-1 flex flex-col justify-between">
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="text-xl font-bold text-gray-900">
                     {product.name}
@@ -197,7 +231,7 @@ export default function Products() {
 
                 {/* Action Button */}
                 <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200">
-                  了解详情
+                  {t('productsPage.details')}
                 </button>
               </div>
             </motion.div>
@@ -212,12 +246,14 @@ export default function Products() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <p className="text-gray-600 mb-6">想了解更多产品信息？</p>
+          <p className="text-gray-600 mb-6">
+            {t('productsPage.cta.description')}
+          </p>
           <a
             href="#contact"
             className="inline-flex items-center px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-200"
           >
-            联系我们获取完整产品目录
+            {t('productsPage.cta.button')}
           </a>
         </motion.div>
       </div>

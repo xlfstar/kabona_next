@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 import {
   CheckCircle,
   Thermometer,
@@ -11,62 +12,63 @@ import {
 } from 'lucide-react'
 
 export default function Quality() {
+  const t = useTranslations()
   const qualitySteps = [
     {
       icon: CheckCircle,
-      title: '严格筛选',
-      description: '只选择来自最优质产区的海鲜，每个供应商都经过严格的资质认证',
+      title: t('qualityPage.steps.selection.title'),
+      description: t('qualityPage.steps.selection.description'),
       color: 'bg-green-500',
     },
     {
       icon: Thermometer,
-      title: '温控管理',
-      description: '采用先进的温控系统，确保海鲜在整个供应链中保持最佳温度',
+      title: t('qualityPage.steps.temperature.title'),
+      description: t('qualityPage.steps.temperature.description'),
       color: 'bg-blue-500',
     },
     {
       icon: Truck,
-      title: '冷链运输',
-      description: '专业的冷链物流网络，确保海鲜在运输过程中的新鲜度',
+      title: t('qualityPage.steps.coldChain.title'),
+      description: t('qualityPage.steps.coldChain.description'),
       color: 'bg-purple-500',
     },
     {
       icon: Clock,
-      title: '快速配送',
-      description: '高效的配送体系，最大程度缩短从海洋到餐桌的时间',
+      title: t('qualityPage.steps.delivery.title'),
+      description: t('qualityPage.steps.delivery.description'),
       color: 'bg-orange-500',
     },
   ]
 
   const certifications = [
     {
-      name: 'HACCP认证',
-      description: '危害分析与关键控制点认证',
+      name: t('qualityPage.certifications.haccp.name'),
+      description: t('qualityPage.certifications.haccp.description'),
       badge: '🏅',
     },
     {
-      name: 'ISO 9001',
-      description: '国际质量管理体系认证',
+      name: t('qualityPage.certifications.iso9001.name'),
+      description: t('qualityPage.certifications.iso9001.description'),
       badge: '🌟',
     },
     {
-      name: 'MSC认证',
-      description: '海洋管理委员会可持续渔业认证',
+      name: t('qualityPage.certifications.msc.name'),
+      description: t('qualityPage.certifications.msc.description'),
       badge: '🌊',
     },
     {
-      name: 'BRC认证',
-      description: '英国零售商协会全球食品安全标准',
+      name: t('qualityPage.certifications.brc.name'),
+      description: t('qualityPage.certifications.brc.description'),
       badge: '🛡️',
     },
     {
-      name: 'FDA认证',
-      description: '美国食品药品监督管理局认证',
+      name: t('qualityPage.certifications.fda.name'),
+      description: t('qualityPage.certifications.fda.description'),
       badge: '✅',
     },
     {
-      name: 'EU认证',
-      description: '欧盟食品安全标准认证',
+      name: t('qualityPage.certifications.eu.name'),
+      description: t('qualityPage.certifications.eu.description'),
       badge: '🇪🇺',
     },
   ]
@@ -74,20 +76,18 @@ export default function Quality() {
   const features = [
     {
       icon: Shield,
-      title: '全程可追溯',
-      description:
-        '从捕捞源头到最终交付，每个环节都有详细记录，确保产品来源透明可靠',
+      title: t('qualityPage.features.traceability.title'),
+      description: t('qualityPage.features.traceability.description'),
     },
     {
       icon: Award,
-      title: '品质保证',
-      description:
-        '专业品控团队，严格的检验流程，确保每份产品都符合最高质量标准',
+      title: t('qualityPage.features.assurance.title'),
+      description: t('qualityPage.features.assurance.description'),
     },
     {
       icon: Thermometer,
-      title: '智能监控',
-      description: '物联网技术实时监控温度、湿度等关键指标，确保最佳保存条件',
+      title: t('qualityPage.features.monitoring.title'),
+      description: t('qualityPage.features.monitoring.description'),
     },
   ]
 
@@ -106,7 +106,7 @@ export default function Quality() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            品质保证体系
+            {t('qualityPage.title')}
           </motion.h2>
           <motion.p
             className="text-xl text-gray-600 max-w-3xl mx-auto"
@@ -115,7 +115,7 @@ export default function Quality() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            严格的品质控制流程，多重认证保障，确保每一份海鲜都达到最高标准
+            {t('qualityPage.description')}
           </motion.p>
         </div>
 
@@ -128,7 +128,7 @@ export default function Quality() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            品质控制流程
+            {t('qualityPage.processTitle')}
           </motion.h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -137,13 +137,13 @@ export default function Quality() {
               return (
                 <motion.div
                   key={index}
-                  className="relative"
+                  className="relative flex"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 text-center">
+                  <div className="flex-1 bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 text-center">
                     <div
                       className={`w-16 h-16 ${step.color} rounded-full flex items-center justify-center mx-auto mb-6`}
                     >
@@ -179,7 +179,7 @@ export default function Quality() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            权威认证
+            {t('qualityPage.certificationsTitle')}
           </motion.h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -239,23 +239,24 @@ export default function Quality() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-3xl font-bold mb-4">我们的品质承诺</h3>
+          <h3 className="text-3xl font-bold mb-4">
+            {t('qualityPage.promise.title')}
+          </h3>
           <p className="text-blue-100 mb-8 max-w-3xl mx-auto text-lg leading-relaxed">
-            我们承诺提供的每一份海鲜都经过严格的品质检验，如果您对我们的产品不满意，
-            我们将无条件退换货并承担所有相关费用。您的满意是我们最大的追求。
+            {t('qualityPage.promise.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#contact"
               className="inline-flex items-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-200"
             >
-              了解更多详情
+              {t('qualityPage.promise.learnMore')}
             </a>
             <a
               href="#products"
               className="inline-flex items-center px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-600 transition-colors duration-200"
             >
-              查看认证产品
+              {t('qualityPage.promise.viewProducts')}
             </a>
           </div>
         </motion.div>

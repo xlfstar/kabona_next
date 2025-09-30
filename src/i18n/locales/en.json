@@ -1,0 +1,389 @@
+{
+  "welcome": "Welcome",
+  "home": "Home",
+  "about": "About Us",
+  "products": "Explore Products",
+  "quality": "Quality Assurance",
+  "getQuote": "Get Quote",
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "quality": "Quality Assurance",
+    "contact": "Contact Us"
+  },
+  "hero": {
+    "title": "Premium Global Seafood",
+    "subtitle": "Delivered to Your Table",
+    "description": "Kabona is committed to providing the highest quality seafood from around the world at the lowest cost, with the highest standards of processing and management to ensure freshness"
+  },
+  "features": {
+    "quality": {
+      "title": "Highest Quality",
+      "description": "Strict quality control ensures every piece of seafood meets the highest standards"
+    },
+    "safety": {
+      "title": "Safety Assurance",
+      "description": "Advanced preservation technology and full cold chain transportation ensure food safety"
+    },
+    "delivery": {
+      "title": "Fast Delivery",
+      "description": "Global supply chain network ensures fresh seafood arrives quickly"
+    }
+  },
+  "productsPage": {
+    "title": "Premium Seafood Selection",
+    "description": "Fresh seafood from premium waters worldwide, with strict quality control to ensure every piece meets the highest standards",
+    "categories": {
+      "all": "All Products",
+      "fish": "Deep Sea Fish",
+      "shellfish": "Shellfish",
+      "crustaceans": "Crustaceans",
+      "specialty": "Specialty Seafood"
+    },
+    "items": {
+      "salmon": {
+        "name": "Norwegian Salmon",
+        "origin": "Norway",
+        "description": "Premium salmon from Norway's pristine waters, with delicious meat rich in Omega-3 fatty acids",
+        "features": [
+          "Wild Caught",
+          "Ultra-low Temperature Preservation",
+          "Same-day Delivery",
+          "Nutrient Rich"
+        ]
+      },
+      "tuna": {
+        "name": "Bluefin Tuna",
+        "origin": "Mediterranean",
+        "description": "Mediterranean deep-sea bluefin tuna with firm texture, perfect for sashimi preparation",
+        "features": [
+          "Deep Sea Caught",
+          "Flash Frozen",
+          "Sashimi Grade",
+          "Excellent Taste"
+        ]
+      },
+      "lobster": {
+        "name": "Australian Lobster",
+        "origin": "Australia",
+        "description": "Fresh lobster from Australian waters with tender meat and sweet flavor",
+        "features": [
+          "Live Transport",
+          "Full Meat",
+          "Sweet Flavor",
+          "High Nutritional Value"
+        ]
+      },
+      "crab": {
+        "name": "Alaskan King Crab",
+        "origin": "Alaska",
+        "description": "King crab from Alaska's cold waters with abundant meat and delicious taste",
+        "features": [
+          "Cold Water Caught",
+          "Abundant Meat",
+          "Delicious Taste",
+          "High Protein"
+        ]
+      },
+      "scallop": {
+        "name": "Hokkaido Scallop",
+        "origin": "Japan",
+        "description": "Fresh scallops from Hokkaido's pristine waters with tender meat and sweet taste",
+        "features": [
+          "Pristine Waters",
+          "Tender Meat",
+          "Sweet Taste",
+          "Low Fat"
+        ]
+      },
+      "shrimp": {
+        "name": "Ecuadorian White Shrimp",
+        "origin": "Ecuador",
+        "description": "Premium white shrimp from Ecuador with firm texture and crispy taste",
+        "features": [
+          "Eco-friendly Farming",
+          "Firm Texture",
+          "Crispy Taste",
+          "No Additives"
+        ]
+      },
+      "oyster": {
+        "name": "French Oyster",
+        "origin": "France",
+        "description": "Fresh oysters from Brittany waters with rich ocean flavor and exquisite taste",
+        "features": [
+          "Rich Ocean Flavor",
+          "Exquisite Taste",
+          "Nutrient Rich",
+          "Natural Farming"
+        ]
+      },
+      "kingCrab": {
+        "name": "Alaskan King Crab",
+        "origin": "Alaska",
+        "description": "King crab from Alaska's cold waters with full meat and delicious taste",
+        "features": [
+          "Cold Water Catch",
+          "Full Meat",
+          "Delicious Taste",
+          "High Protein"
+        ]
+      },
+      "seaBass": {
+        "name": "Mediterranean Sea Bass",
+        "origin": "Mediterranean",
+        "description": "Premium sea bass from Mediterranean with tender meat and delicate flavor",
+        "features": [
+          "Tender Meat",
+          "Delicate Flavor",
+          "Low Fat",
+          "Easy to Digest"
+        ]
+      },
+      "greenMussels": {
+        "name": "New Zealand Green Mussels",
+        "origin": "New Zealand",
+        "description": "Green mussels from New Zealand's pristine waters with plump meat and sweet taste",
+        "features": [
+          "Pristine Waters",
+          "Plump Meat",
+          "Sweet Taste",
+          "Rich in Minerals"
+        ]
+      }
+    },
+    "orderNow": "Order Now",
+    "details": "Details",
+    "hotSale": "Hot Sale",
+    "cta": {
+      "description": "Want to learn more about our products?",
+      "button": "Contact us for complete product catalog"
+    }
+  },
+  "qualityPage": {
+    "title": "Quality Assurance",
+    "description": "We implement strict quality control measures throughout the entire supply chain to ensure every piece of seafood meets the highest standards",
+    "processTitle": "Quality Control Process",
+    "steps": {
+      "selection": {
+        "title": "Careful Selection",
+        "description": "Professional team selects the finest seafood from premium waters worldwide"
+      },
+      "temperature": {
+        "title": "Temperature Control",
+        "description": "Maintain optimal temperature throughout processing and storage"
+      },
+      "coldChain": {
+        "title": "Cold Chain Transport",
+        "description": "Complete cold chain logistics ensure freshness from sea to table"
+      },
+      "delivery": {
+        "title": "Timely Delivery",
+        "description": "Fast and reliable delivery service ensures optimal freshness"
+      }
+    },
+    "certifications": {
+      "haccp": {
+        "name": "HACCP Certification",
+        "description": "Hazard Analysis and Critical Control Points system ensures food safety"
+      },
+      "iso9001": {
+        "name": "ISO 9001 Quality Management",
+        "description": "International standard for quality management systems"
+      },
+      "msc": {
+        "name": "MSC Sustainable Fisheries",
+        "description": "Marine Stewardship Council certification for sustainable fishing"
+      },
+      "brc": {
+        "name": "BRC Global Standards",
+        "description": "British Retail Consortium food safety standards"
+      },
+      "fda": {
+        "name": "FDA Approved",
+        "description": "US Food and Drug Administration approval for food safety"
+      },
+      "eu": {
+        "name": "EU Standards Compliance",
+        "description": "European Union food safety and quality standards"
+      }
+    },
+    "features": {
+      "traceability": {
+        "title": "Full Traceability",
+        "description": "Complete tracking from source to destination for transparency and safety"
+      },
+      "assurance": {
+        "title": "Quality Assurance",
+        "description": "Multi-level quality checks ensure consistent high standards"
+      },
+      "monitoring": {
+        "title": "Real-time Monitoring",
+        "description": "Continuous temperature and quality monitoring throughout transport"
+      }
+    },
+    "certificationsTitle": "Authoritative Certifications",
+    "promise": {
+      "title": "Quality Promise",
+      "description": "We promise to provide you with the highest quality seafood products, each piece undergoes strict quality testing and certification. From source to table, we ensure transparency and traceability throughout the supply chain.",
+      "learnMore": "Learn More",
+      "viewProducts": "View Certified Products"
+    }
+  },
+  "aboutPage": {
+    "title": "About Kabona",
+    "description": "Professional global seafood supplier committed to providing customers with the highest quality seafood products and services",
+    "stats": {
+      "countries": "Countries Served",
+      "customers": "Satisfied Customers",
+      "products": "Product Varieties",
+      "experience": "Years of Experience",
+      "certifications":"Quality Certifications",
+      "growth":"Yearly Growth Rate"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "paragraph1": "Founded in 2010, Kabona is a professional global seafood supplier. We are committed to connecting premium seafood resources from around the world with consumers, providing customers with the freshest and highest quality seafood products.",
+      "highlight": "Our goal is to become the world's most trusted seafood supplier",
+      "paragraph2": "Through establishing a comprehensive global supply chain network, we ensure that every step from catch to table meets the highest quality standards. We have established long-term stable partnerships with fishermen, processing plants, and logistics companies worldwide.",
+      "paragraph3": "Whether you are a high-end restaurant, supermarket chain, or individual consumer, we can provide customized seafood supply solutions to ensure you receive the highest quality products and services."
+    },
+    "networkTitle": "Global Seafood Supply Network",
+    "values": {
+      "quality": {
+        "title": "Quality First",
+        "description": "Strict quality control system ensures every piece of seafood meets the highest standards"
+      },
+      "sustainability": {
+        "title": "Sustainable Development",
+        "description": "Supporting sustainable fisheries and protecting marine ecosystems"
+      },
+      "innovation": {
+        "title": "Technological Innovation",
+        "description": "Using the most advanced preservation and logistics technology to ensure product freshness"
+      },
+      "service": {
+        "title": "Premium Service",
+        "description": "Professional customer service team providing comprehensive support"
+      }
+    },
+    "valuesTitle": "Our Core Values",
+    "cta": {
+      "title": "Join Our Partner Network",
+      "description": "Whether you are a restaurant, wholesaler, or retailer, we have seafood supply solutions that suit your needs",
+      "button": "Start Partnership"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Ready to provide professional seafood supply consultation and customized solutions",
+    "form": {
+      "title": "Online Inquiry",
+      "name": "Name",
+      "namePlaceholder": "Please enter your name",
+      "email": "Email",
+      "emailPlaceholder": "Please enter your email address",
+      "company": "Company Name",
+      "companyPlaceholder": "Please enter your company name",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Please enter your phone number",
+      "productType": "Product Type",
+      "productTypePlaceholder": "Please select the product type you're interested in",
+      "selectProductType": "Please select product type",
+      "productTypes": {
+        "fish": "Deep Sea Fish",
+        "shellfish": "Shellfish",
+        "crustacean": "Crustaceans",
+        "other": "Other Products",
+        "bulk": "Bulk Purchase",
+        "custom": "Custom Requirements"
+      },
+      "message": "Detailed Requirements",
+      "messagePlaceholder": "Please describe your requirements in detail, including quantity, specifications, delivery time, etc.",
+      "sending": "Sending...",
+      "submit": "Send Inquiry",
+      "successMessage": "Thank you for your inquiry! We will contact you within 24 hours."
+    },
+    "info": {
+      "title": "Contact Information",
+      "email": {
+        "title": "Email Address",
+        "content": "info@kabonaus.com",
+        "description": "We will reply to your email within 24 hours"
+      },
+      "phone": {
+        "title": "Phone Number",
+        "content": "+86 400-123-4567",
+        "description": "Business hours: Monday to Friday 9:00-18:00"
+      },
+      "address": {
+        "title": "Company Address",
+        "content": "123 Seafood Avenue, Pudong New Area, Shanghai",
+        "description": "Welcome to schedule a visit to our showroom"
+      },
+      "hours": {
+        "title": "Business Hours",
+        "content": "Monday to Friday 9:00-18:00",
+        "description": "Please make an appointment in advance for holidays"
+      }
+    },
+    "map": {
+      "title": "Map Location"
+    },
+    "quickContact": {
+      "title": "Quick Contact",
+      "description": "Urgent procurement needs? Our sales team is ready to serve you",
+      "call": "Call Now",
+      "email": "Send Email"
+    }
+  },
+  "footer": {
+    "company": {
+      "description": "Committed to providing the highest quality seafood from around the world at the lowest cost, with the highest standards of processing and management to ensure freshness.",
+      "address": "123 Seafood Avenue, Pudong New Area, Shanghai"
+    },
+    "sections": {
+      "products": "Product Categories",
+      "company": "Company Information",
+      "services": "Services",
+      "support": "Customer Support"
+    },
+    "links": {
+      "product": {
+        "fish": "Deep Sea Fish",
+        "shellfish": "Shellfish",
+        "crustaceans": "Crustaceans",
+        "specialty": "Specialty Seafood"
+      },
+      "company": {
+        "about": "About Us",
+        "quality": "Quality Assurance",
+        "news": "News",
+        "careers": "Careers"
+      },
+      "service": {
+        "wholesale": "Wholesale Service",
+        "retail": "Retail Service",
+        "custom": "Custom Service",
+        "support": "After-sales Support"
+      },
+      "support": {
+        "contact": "Contact Us",
+        "chat": "Online Chat",
+        "faq": "FAQ",
+        "shipping": "Shipping Policy"
+      }
+    },
+    "newsletter": {
+      "title": "Subscribe to Our Newsletter",
+      "description": "Get the latest product information and industry updates",
+      "placeholder": "Please enter your email address",
+      "subscribe": "Subscribe Now"
+    },
+    "copyright": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "website": "Website"
+  }
+}

@@ -2,8 +2,10 @@
 
 import { ArrowRight, Star, Shield, Truck } from 'lucide-react'
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 
 export default function Hero() {
+  const t = useTranslations()
   return (
     <section
       id="home"
@@ -31,35 +33,34 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
-            <span className="block">全球优质海鲜</span>
-            <span className="block bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
-              直达您的餐桌
+            <span className="block">{t('hero.title')}</span>
+            <span className="block bg-gradient-to-r from-gray-400 to-cyan-300 bg-clip-text text-transparent">
+              {t('hero.subtitle')}
             </span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Kabona致力于以最低成本提供来自全球各地最高品质海鲜，
-            以最高标准加工和管理产品，确保新鲜度
+          <p className="text-xl md:text-2xl text-gray-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+            {t('hero.description')}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <motion.a
               href="#products"
-              className="inline-flex items-center px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
+              className="inline-flex items-center px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              探索产品
+              {t('products')}
               <ArrowRight className="ml-2 w-5 h-5" />
             </motion.a>
 
             <motion.a
               href="#contact"
-              className="inline-flex items-center px-8 py-4 bg-transparent border-2 border-white text-white text-lg font-semibold rounded-lg hover:bg-white hover:text-blue-900 transition-all duration-300"
+              className="inline-flex items-center px-8 py-4 bg-transparent border-2 border-white text-white text-lg font-semibold rounded-lg hover:bg-white hover:text-gray-900 transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              获取报价
+              {t('getQuote')}
             </motion.a>
           </div>
 
@@ -75,10 +76,10 @@ export default function Hero() {
                 <Star className="w-8 h-8 text-blue-400" />
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">
-                最高品质
+                {t('features.quality.title')}
               </h3>
-              <p className="text-blue-100">
-                严格的质量控制，确保每一份海鲜都符合最高标准
+              <p className="text-gray-100">
+                {t('features.quality.description')}
               </p>
             </div>
 
@@ -87,10 +88,10 @@ export default function Hero() {
                 <Shield className="w-8 h-8 text-blue-400" />
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">
-                安全保障
+                {t('features.safety.title')}
               </h3>
-              <p className="text-blue-100">
-                先进的保鲜技术，全程冷链运输，保证食品安全
+              <p className="text-gray-100">
+                {t('features.safety.description')}
               </p>
             </div>
 
@@ -99,10 +100,10 @@ export default function Hero() {
                 <Truck className="w-8 h-8 text-blue-400" />
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">
-                快速配送
+                {t('features.delivery.title')}
               </h3>
-              <p className="text-blue-100">
-                全球供应链网络，确保新鲜海鲜快速到达
+              <p className="text-gray-100">
+                {t('features.delivery.description')}
               </p>
             </div>
           </motion.div>

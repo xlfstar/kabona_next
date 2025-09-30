@@ -2,9 +2,11 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 import { Mail, Phone, MapPin, Clock, Send, MessageCircle } from 'lucide-react'
 
 export default function Contact() {
+  const t = useTranslations()
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -35,7 +37,7 @@ export default function Contact() {
     // 模拟表单提交
     setTimeout(() => {
       setIsSubmitting(false)
-      alert('感谢您的咨询！我们将在24小时内与您联系。')
+      alert(t('contact.form.successMessage'))
       setFormData({
         name: '',
         email: '',
@@ -50,37 +52,37 @@ export default function Contact() {
   const contactInfo = [
     {
       icon: Mail,
-      title: '邮箱联系',
+      title: t('contact.info.email.title'),
       content: 'info@kabonaus.com',
-      description: '24小时内回复您的邮件',
+      description: t('contact.info.email.description'),
     },
     {
       icon: Phone,
-      title: '电话咨询',
+      title: t('contact.info.phone.title'),
       content: '+86 400-123-4567',
-      description: '工作日 9:00-18:00',
+      description: t('contact.info.phone.description'),
     },
     {
       icon: MapPin,
-      title: '总部地址',
-      content: '上海市浦东新区海鲜大道123号',
-      description: '欢迎预约参观我们的仓储中心',
+      title: t('contact.info.address.title'),
+      content: t('contact.info.address.content'),
+      description: t('contact.info.address.description'),
     },
     {
       icon: Clock,
-      title: '服务时间',
-      content: '全年无休',
-      description: '紧急订单24小时响应',
+      title: t('contact.info.hours.title'),
+      content: t('contact.info.hours.content'),
+      description: t('contact.info.hours.description'),
     },
   ]
 
   const productTypes = [
-    '深海鱼类',
-    '贝类海鲜',
-    '甲壳类',
-    '其他海鲜',
-    '批量采购',
-    '定制服务',
+    t('contact.form.productTypes.fish'),
+    t('contact.form.productTypes.shellfish'),
+    t('contact.form.productTypes.crustacean'),
+    t('contact.form.productTypes.other'),
+    t('contact.form.productTypes.bulk'),
+    t('contact.form.productTypes.custom'),
   ]
 
   return (
@@ -98,7 +100,7 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            联系我们
+            {t('contact.title')}
           </motion.h2>
           <motion.p
             className="text-xl text-gray-600 max-w-3xl mx-auto"
@@ -107,7 +109,7 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            随时为您提供专业的海鲜供应咨询和定制化解决方案
+            {t('contact.description')}
           </motion.p>
         </div>
 
@@ -122,7 +124,9 @@ export default function Contact() {
           >
             <div className="flex items-center mb-6">
               <MessageCircle className="w-6 h-6 text-blue-600 mr-3" />
-              <h3 className="text-2xl font-bold text-gray-900">在线咨询</h3>
+              <h3 className="text-2xl font-bold text-gray-900">
+                {t('contact.form.title')}
+              </h3>
             </div>
 
             <form
@@ -135,7 +139,7 @@ export default function Contact() {
                     htmlFor="name"
                     className="block text-sm font-medium text-gray-700 mb-2"
                   >
-                    姓名 *
+                    {t('contact.form.name')} *
                   </label>
                   <input
                     type="text"
@@ -145,7 +149,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
-                    placeholder="请输入您的姓名"
+                    placeholder={t('contact.form.namePlaceholder')}
                   />
                 </div>
 
@@ -154,7 +158,7 @@ export default function Contact() {
                     htmlFor="email"
                     className="block text-sm font-medium text-gray-700 mb-2"
                   >
-                    邮箱 *
+                    {t('contact.form.email')} *
                   </label>
                   <input
                     type="email"
@@ -164,7 +168,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
-                    placeholder="请输入您的邮箱"
+                    placeholder={t('contact.form.emailPlaceholder')}
                   />
                 </div>
               </div>
@@ -175,7 +179,7 @@ export default function Contact() {
                     htmlFor="company"
                     className="block text-sm font-medium text-gray-700 mb-2"
                   >
-                    公司名称
+                    {t('contact.form.company')}
                   </label>
                   <input
                     type="text"
@@ -184,7 +188,7 @@ export default function Contact() {
                     value={formData.company}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
-                    placeholder="请输入公司名称"
+                    placeholder={t('contact.form.companyPlaceholder')}
                   />
                 </div>
 
@@ -193,7 +197,7 @@ export default function Contact() {
                     htmlFor="phone"
                     className="block text-sm font-medium text-gray-700 mb-2"
                   >
-                    联系电话
+                    {t('contact.form.phone')}
                   </label>
                   <input
                     type="tel"
@@ -202,7 +206,7 @@ export default function Contact() {
                     value={formData.phone}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
-                    placeholder="请输入联系电话"
+                    placeholder={t('contact.form.phonePlaceholder')}
                   />
                 </div>
               </div>
@@ -212,7 +216,7 @@ export default function Contact() {
                   htmlFor="productType"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  感兴趣的产品类型
+                  {t('contact.form.productType')}
                 </label>
                 <select
                   id="productType"
@@ -221,7 +225,9 @@ export default function Contact() {
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
                 >
-                  <option value="">请选择产品类型</option>
+                  <option value="">
+                    {t('contact.form.selectProductType')}
+                  </option>
                   {productTypes.map((type) => (
                     <option
                       key={type}
@@ -238,7 +244,7 @@ export default function Contact() {
                   htmlFor="message"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  详细需求 *
+                  {t('contact.form.message')} *
                 </label>
                 <textarea
                   id="message"
@@ -248,7 +254,7 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200 resize-none"
-                  placeholder="请详细描述您的需求，包括产品数量、规格、交付时间等..."
+                  placeholder={t('contact.form.messagePlaceholder')}
                 ></textarea>
               </div>
 
@@ -266,12 +272,12 @@ export default function Contact() {
                 {isSubmitting ? (
                   <>
                     <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
-                    发送中...
+                    {t('contact.form.sending')}
                   </>
                 ) : (
                   <>
                     <Send className="w-5 h-5 mr-2" />
-                    发送咨询
+                    {t('contact.form.submit')}
                   </>
                 )}
               </motion.button>
@@ -288,7 +294,7 @@ export default function Contact() {
           >
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                联系方式
+                {t('contact.info.title')}
               </h3>
               <div className="space-y-6">
                 {contactInfo.map((info, index) => {
@@ -332,9 +338,9 @@ export default function Contact() {
             >
               <div className="text-center">
                 <MapPin className="w-12 h-12 text-gray-400 mx-auto mb-4" />
-                <p className="text-gray-600">地图位置</p>
+                <p className="text-gray-600">{t('contact.map.title')}</p>
                 <p className="text-gray-500 text-sm">
-                  上海市浦东新区海鲜大道123号
+                  {t('contact.info.address.content')}
                 </p>
               </div>
             </motion.div>
@@ -348,10 +354,10 @@ export default function Contact() {
               viewport={{ once: true }}
             >
               <h4 className="text-lg font-semibold text-gray-900 mb-3">
-                快速联系
+                {t('contact.quickContact.title')}
               </h4>
               <p className="text-gray-600 mb-4 text-sm">
-                紧急采购需求？我们的销售团队随时为您服务
+                {t('contact.quickContact.description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
@@ -359,14 +365,14 @@ export default function Contact() {
                   className="flex items-center justify-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200"
                 >
                   <Phone className="w-4 h-4 mr-2" />
-                  立即致电
+                  {t('contact.quickContact.call')}
                 </a>
                 <a
                   href="mailto:info@kabonaus.com"
                   className="flex items-center justify-center px-4 py-2 bg-white border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors duration-200"
                 >
                   <Mail className="w-4 h-4 mr-2" />
-                  发送邮件
+                  {t('contact.quickContact.email')}
                 </a>
               </div>
             </motion.div>

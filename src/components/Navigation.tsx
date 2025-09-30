@@ -1,11 +1,19 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Menu, X, Fish } from 'lucide-react'
+import { Menu, X, Fish, Globe } from 'lucide-react'
+import { useTranslations, useLocale } from 'next-intl'
+// import { useRouter, usePathname } from 'next/navigation'
+import { Link, usePathname, useRouter } from '@/i18n/routing'
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const [showLanguageMenu, setShowLanguageMenu] = useState(false)
+  const t = useTranslations()
+  const locale = useLocale()
+  const router = useRouter()
+  const pathname = usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,12 +24,23 @@ export default function Navigation() {
   }, [])
 
   const navItems = [
-    { name: '首页', href: '#home' },
-    { name: '产品', href: '#products' },
-    { name: '关于我们', href: '#about' },
-    { name: '品质保证', href: '#quality' },
-    { name: '联系我们', href: '#contact' },
+    { name: t('navigation.home'), href: '#home' },
+    { name: t('navigation.products'), href: '#products' },
+    { name: t('navigation.about'), href: '#about' },
+    { name: t('navigation.quality'), href: '#quality' },
+    { name: t('navigation.contact'), href: '#contact' },
   ]
+
+  const languages = [
+    { code: 'zh', name: '中文', flag: '🇨🇳' },
+    { code: 'en', name: 'English', flag: '🇺🇸' },
+    { code: 'ja', name: '日本語', flag: '🇯🇵' },
+  ]
+
+  const handleLanguageChange = (locale: string) => {
+    router.replace(pathname, { locale })
+    setShowLanguageMenu(false)
+  }
 
   return (
     <nav
@@ -58,13 +77,45 @@ export default function Navigation() {
             </div>
           </div>
 
+          {/* Language Switcher */}
+          <div className="hidden md:block relative">
+            <button
+              onClick={() => setShowLanguageMenu(!showLanguageMenu)}
+              className={`flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                isScrolled
+                  ? 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+                  : 'text-white hover:text-blue-200 hover:bg-white/10'
+              }`}
+            >
+              <Globe className="w-4 h-4" />
+              <span>
+                {languages.find((lang) => lang.code === locale)?.flag}
+              </span>
+            </button>
+
+            {showLanguageMenu && (
+              <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50">
+                {languages.map((language) => (
+                  <button
+                    key={language.code}
+                    onClick={() => handleLanguageChange(language.code)}
+                    className="flex items-center space-x-3 w-full px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
+                  >
+                    <span>{language.flag}</span>
+                    <span>{language.name}</span>
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
           {/* CTA Button */}
           <div className="hidden md:block">
             <a
               href="#contact"
               className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors duration-200"
             >
-              获取报价
+              {t('navigation.contact')}
             </a>
           </div>
 
@@ -107,7 +158,7 @@ export default function Navigation() {
               className="bg-blue-600 text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700 transition-colors duration-200 mt-4"
               onClick={() => setIsOpen(false)}
             >
-              获取报价
+              {t('navigation.contact')}
             </a>
           </div>
         </div>

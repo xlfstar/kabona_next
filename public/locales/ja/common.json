@@ -1,0 +1,389 @@
+{
+  "welcome": "ようこそ",
+  "home": "ホーム",
+  "about": "私たちについて",
+  "products": "製品を探索",
+  "quality": "品質保証",
+  "getQuote": "見積もりを取得",
+  "navigation": {
+    "home": "ホーム",
+    "about": "私たちについて",
+    "products": "製品",
+    "quality": "品質保証",
+    "contact": "お問い合わせ"
+  },
+  "hero": {
+    "title": "世界最高品質の海産物",
+    "subtitle": "あなたの食卓へお届け",
+    "description": "Kabonaは最低コストで世界各地から最高品質の海産物を提供し、最高基準の加工と管理で新鮮さを保証することをお約束します"
+  },
+  "features": {
+    "quality": {
+      "title": "最高品質",
+      "description": "厳格な品質管理により、すべての海産物が最高基準を満たすことを保証"
+    },
+    "safety": {
+      "title": "安全保障",
+      "description": "先進的な保存技術と完全なコールドチェーン輸送で食品安全を保証"
+    },
+    "delivery": {
+      "title": "迅速配送",
+      "description": "グローバルサプライチェーンネットワークで新鮮な海産物を迅速にお届け"
+    }
+  },
+  "productsPage": {
+    "title": "プレミアム海産物セレクション",
+    "description": "世界各地の優良海域からの新鮮な海産物、厳格な品質管理により、すべての商品が最高基準を満たすことを保証",
+    "categories": {
+      "all": "すべての製品",
+      "fish": "深海魚",
+      "shellfish": "貝類",
+      "crustaceans": "甲殻類",
+      "specialty": "特選海産物"
+    },
+    "items": {
+      "salmon": {
+        "name": "ノルウェーサーモン",
+        "origin": "ノルウェー",
+        "description": "ノルウェーの清浄な海域からのプレミアムサーモン、オメガ3脂肪酸豊富な美味しい身",
+        "features": [
+          "天然捕獲",
+          "超低温保存",
+          "当日配送",
+          "栄養豊富"
+        ]
+      },
+      "tuna": {
+        "name": "本マグロ",
+        "origin": "地中海",
+        "description": "地中海深海の本マグロ、しっかりとした食感で刺身に最適",
+        "features": [
+          "深海捕獲",
+          "急速冷凍",
+          "刺身グレード",
+          "絶品の味"
+        ]
+      },
+      "lobster": {
+        "name": "オーストラリアロブスター",
+        "origin": "オーストラリア",
+        "description": "オーストラリア海域の新鮮なロブスター、柔らかい身と甘い味",
+        "features": [
+          "活輸送",
+          "身がぎっしり",
+          "甘い味",
+          "高栄養価"
+        ]
+      },
+      "crab": {
+        "name": "アラスカキングクラブ",
+        "origin": "アラスカ",
+        "description": "アラスカの冷たい海域のキングクラブ、豊富な身と美味しい味",
+        "features": [
+          "冷水捕獲",
+          "豊富な身",
+          "美味しい味",
+          "高タンパク"
+        ]
+      },
+      "scallop": {
+        "name": "北海道ホタテ",
+        "origin": "日本",
+        "description": "北海道の清浄な海域の新鮮なホタテ、柔らかい身と甘い味",
+        "features": [
+          "清浄海域",
+          "柔らかい身",
+          "甘い味",
+          "低脂肪"
+        ]
+      },
+      "shrimp": {
+        "name": "エクアドル白エビ",
+        "origin": "エクアドル",
+        "description": "エクアドルのプレミアム白エビ、しっかりとした食感とプリプリの味",
+        "features": [
+          "環境配慮養殖",
+          "しっかりした食感",
+          "プリプリの味",
+          "無添加"
+        ]
+      },
+      "oyster": {
+        "name": "フランス牡蠣",
+        "origin": "フランス",
+        "description": "ブルターニュ海域の新鮮な牡蠣、濃厚な海の味と絶妙な食感",
+        "features": [
+          "濃厚な海の味",
+          "絶妙な食感",
+          "栄養豊富",
+          "天然養殖"
+        ]
+      },
+      "kingCrab": {
+        "name": "アラスカキングクラブ",
+        "origin": "アラスカ",
+        "description": "アラスカの寒冷海域のキングクラブ、身がぎっしりで美味しい味",
+        "features": [
+          "寒海捕獲",
+          "身がぎっしり",
+          "美味しい味",
+          "高タンパク質"
+        ]
+      },
+      "seaBass": {
+        "name": "地中海シーバス",
+        "origin": "地中海",
+        "description": "地中海のプレミアムシーバス、柔らかい身と繊細な味",
+        "features": [
+          "柔らかい身",
+          "繊細な味",
+          "低脂肪",
+          "消化しやすい"
+        ]
+      },
+      "greenMussels": {
+        "name": "ニュージーランドグリーンマッスル",
+        "origin": "ニュージーランド",
+        "description": "ニュージーランドの清浄海域のグリーンマッスル、ぷりぷりの身と甘い味",
+        "features": [
+          "清浄海域",
+          "ぷりぷりの身",
+          "甘い味",
+          "ミネラル豊富"
+        ]
+      }
+    },
+    "orderNow": "今すぐ注文",
+    "details": "詳細",
+    "hotSale": "人気商品",
+    "cta": {
+      "description": "製品についてもっと知りたいですか？",
+      "button": "完全な製品カタログについてお問い合わせください"
+    }
+  },
+  "qualityPage": {
+    "title": "品質保証",
+    "description": "サプライチェーン全体で厳格な品質管理措置を実施し、すべての海産物が最高基準を満たすことを保証します",
+    "processTitle": "品質管理プロセス",
+    "steps": {
+      "selection": {
+        "title": "厳選",
+        "description": "専門チームが世界の優良海域から最高品質の海産物を厳選"
+      },
+      "temperature": {
+        "title": "温度管理",
+        "description": "加工・保管過程で最適温度を維持"
+      },
+      "coldChain": {
+        "title": "コールドチェーン輸送",
+        "description": "完全なコールドチェーン物流で海から食卓まで新鮮さを保証"
+      },
+      "delivery": {
+        "title": "迅速配送",
+        "description": "迅速で信頼性の高い配送サービスで最適な新鮮さを確保"
+      }
+    },
+    "certifications": {
+      "haccp": {
+        "name": "HACCP認証",
+        "description": "危害分析重要管理点システムで食品安全を保証"
+      },
+      "iso9001": {
+        "name": "ISO 9001品質管理",
+        "description": "品質管理システムの国際標準"
+      },
+      "msc": {
+        "name": "MSC持続可能漁業",
+        "description": "海洋管理協議会の持続可能な漁業認証"
+      },
+      "brc": {
+        "name": "BRCグローバル規格",
+        "description": "英国小売協会食品安全基準"
+      },
+      "fda": {
+        "name": "FDA承認",
+        "description": "米国食品医薬品局食品安全承認"
+      },
+      "eu": {
+        "name": "EU基準準拠",
+        "description": "欧州連合食品安全・品質基準"
+      }
+    },
+    "features": {
+      "traceability": {
+        "title": "完全トレーサビリティ",
+        "description": "原産地から最終目的地まで完全追跡で透明性と安全性を確保"
+      },
+      "assurance": {
+        "title": "品質保証",
+        "description": "多層品質チェックで一貫した高基準を確保"
+      },
+      "monitoring": {
+        "title": "リアルタイム監視",
+        "description": "輸送中の継続的な温度・品質監視"
+      }
+    },
+    "certificationsTitle": "権威ある認証",
+    "promise": {
+      "title": "品質保証",
+      "description": "最高品質の海産物製品をお客様に提供することをお約束します。すべての商品は厳格な品質テストと認証を受けています。産地から食卓まで、サプライチェーン全体の透明性と追跡可能性を保証します。",
+      "learnMore": "詳細を見る",
+      "viewProducts": "認証製品を見る"
+    }
+  },
+  "aboutPage": {
+    "title": "Kabonaについて",
+    "description": "お客様に最高品質の海産物製品とサービスを提供することを使命とするプロフェッショナルなグローバル海産物サプライヤー",
+    "stats": {
+      "countries": "サービス提供国",
+      "customers": "満足顧客数",
+      "products": "製品種類",
+      "experience": "年の経験",
+      "certifications":"品質認証",
+      "growth":"年次成長率"
+    },
+    "mission": {
+      "title": "私たちの使命",
+      "paragraph1": "2010年に設立されたKabonaは、プロフェッショナルなグローバル海産物サプライヤーです。世界各地のプレミアム海産物資源と消費者を結び、お客様に最も新鮮で最高品質の海産物製品を提供することを使命としています。",
+      "highlight": "私たちの目標は、世界で最も信頼される海産物サプライヤーになることです",
+      "paragraph2": "包括的なグローバルサプライチェーンネットワークの構築により、漁獲から食卓まで、すべてのステップが最高品質基準を満たすことを保証しています。世界中の漁師、加工工場、物流会社と長期的で安定したパートナーシップを築いています。",
+      "paragraph3": "高級レストラン、スーパーマーケットチェーン、個人消費者のいずれであっても、カスタマイズされた海産物供給ソリューションを提供し、最高品質の製品とサービスをお受け取りいただけることを保証します。"
+    },
+    "networkTitle": "グローバル海産物供給ネットワーク",
+    "values": {
+      "quality": {
+        "title": "品質第一",
+        "description": "厳格な品質管理システムにより、すべての海産物が最高基準を満たすことを保証"
+      },
+      "sustainability": {
+        "title": "持続可能な発展",
+        "description": "持続可能な漁業を支援し、海洋生態系を保護"
+      },
+      "innovation": {
+        "title": "技術革新",
+        "description": "最先端の保存・物流技術を使用して製品の新鮮さを保証"
+      },
+      "service": {
+        "title": "プレミアムサービス",
+        "description": "プロフェッショナルなカスタマーサービスチームが包括的なサポートを提供"
+      }
+    },
+    "valuesTitle": "私たちの核となる価値観",
+    "cta": {
+      "title": "パートナーネットワークに参加",
+      "description": "レストラン、卸売業者、小売業者のいずれであっても、お客様のニーズに適した海産物供給ソリューションをご用意しています",
+      "button": "パートナーシップ開始"
+    }
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "description": "プロフェッショナルな海産物供給コンサルティングとカスタマイズソリューションをいつでも提供",
+    "form": {
+      "title": "オンライン問い合わせ",
+      "name": "お名前",
+      "namePlaceholder": "お名前を入力してください",
+      "email": "メールアドレス",
+      "emailPlaceholder": "メールアドレスを入力してください",
+      "company": "会社名",
+      "companyPlaceholder": "会社名を入力してください",
+      "phone": "電話番号",
+      "phonePlaceholder": "電話番号を入力してください",
+      "productType": "製品タイプ",
+      "productTypePlaceholder": "ご興味のある製品タイプを選択してください",
+      "selectProductType": "製品タイプを選択してください",
+      "productTypes": {
+        "fish": "深海魚",
+        "shellfish": "貝類",
+        "crustacean": "甲殻類",
+        "other": "その他の製品",
+        "bulk": "大量購入",
+        "custom": "カスタム要件"
+      },
+      "message": "詳細要件",
+      "messagePlaceholder": "数量、仕様、配送時期などの要件を詳しく記述してください",
+      "sending": "送信中...",
+      "submit": "問い合わせ送信",
+      "successMessage": "お問い合わせありがとうございます！24時間以内にご連絡いたします。"
+    },
+    "info": {
+      "title": "連絡先情報",
+      "email": {
+        "title": "メールアドレス",
+        "content": "info@kabonaus.com",
+        "description": "24時間以内にメールでご返信いたします"
+      },
+      "phone": {
+        "title": "電話番号",
+        "content": "+86 400-123-4567",
+        "description": "営業時間：月曜日から金曜日 9:00-18:00"
+      },
+      "address": {
+        "title": "会社住所",
+        "content": "上海市浦東新区海鮮大道123号",
+        "description": "ショールーム見学のご予約をお待ちしております"
+      },
+      "hours": {
+        "title": "営業時間",
+        "content": "月曜日から金曜日 9:00-18:00",
+        "description": "祝日は事前にご予約をお願いします"
+      }
+    },
+    "map": {
+      "title": "地図位置"
+    },
+    "quickContact": {
+      "title": "クイック連絡",
+      "description": "緊急調達ニーズ？営業チームがいつでもサービスを提供します",
+      "call": "今すぐ電話",
+      "email": "メール送信"
+    }
+  },
+  "footer": {
+    "company": {
+      "description": "最低コストで世界各地から最高品質の海産物を提供し、最高基準の加工と管理で新鮮さを保証することをお約束します。",
+      "address": "上海市浦東新区海鮮大道123号"
+    },
+    "sections": {
+      "products": "製品カテゴリー",
+      "company": "会社情報",
+      "services": "サービス",
+      "support": "カスタマーサポート"
+    },
+    "links": {
+      "product": {
+        "fish": "深海魚",
+        "shellfish": "貝類",
+        "crustaceans": "甲殻類",
+        "specialty": "特選海産物"
+      },
+      "company": {
+        "about": "私たちについて",
+        "quality": "品質保証",
+        "news": "ニュース",
+        "careers": "採用情報"
+      },
+      "service": {
+        "wholesale": "卸売サービス",
+        "retail": "小売サービス",
+        "custom": "カスタムサービス",
+        "support": "アフターサポート"
+      },
+      "support": {
+        "contact": "お問い合わせ",
+        "chat": "オンラインチャット",
+        "faq": "よくある質問",
+        "shipping": "配送ポリシー"
+      }
+    },
+    "newsletter": {
+      "title": "ニュースレター購読",
+      "description": "最新の製品情報と業界アップデートを取得",
+      "placeholder": "メールアドレスを入力してください",
+      "subscribe": "今すぐ購読"
+    },
+    "copyright": "すべての権利を保有",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "website": "ウェブサイト"
+  }
+}
