@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { Menu, X, Fish, Globe } from 'lucide-react'
 import { useTranslations, useLocale } from 'next-intl'
 // import { useRouter, usePathname } from 'next/navigation'
-import { Link, usePathname, useRouter } from '@/i18n/routing'
+import { usePathname, useRouter } from '@/i18n/routing'
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
